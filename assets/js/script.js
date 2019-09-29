@@ -56,3 +56,5 @@ function resetScoreKeeper() {
     winner.textContent = "_____";
     scoreLimit.value = null;
 }
+
+resetButton.addEventListener("click", resetScoreKeeper);
