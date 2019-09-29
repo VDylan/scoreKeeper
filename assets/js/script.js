@@ -18,6 +18,8 @@ function requiredScore() {
     scoreToWin.textContent = scoreLimit.value;
 }
 
+scoreLimit.addEventListener("change", requiredScore);
+
 function addScorePlayerOne() {
   if (scorePlayerOne.textContent != scoreLimit) {
     scoreOne++;
