@@ -23,12 +23,12 @@ scoreLimit.addEventListener("change", requiredScore);
 function setWinner() {
   if (scoreOne == scoreLimit.value && scoreOne > 0) {
     winner.textContent = "Player 1";
-    scorePlayerOne.style.color = 'green';
-    scorePlayerTwo.style.color = 'red';
+    scorePlayerOne.style.color = "green";
+    scorePlayerTwo.style.color = "red";
   } else if (scoreTwo == scoreLimit.value && scoreTwo > 0) {
     winner.textContent = "Player 2";
-    scorePlayerTwo.style.color = 'green';
-    scorePlayerOne.style.color = 'red';
+    scorePlayerTwo.style.color = "green";
+    scorePlayerOne.style.color = "red";
   }
 }
 
