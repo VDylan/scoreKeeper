@@ -25,6 +25,7 @@ function addScorePlayerOne() {
     scoreOne++;
   }
   scorePlayerOne.textContent = scoreOne;
+  setWinner();
 }
 
 function addScorePlayerTwo() {
@@ -32,7 +33,16 @@ function addScorePlayerTwo() {
     scoreTwo++;
   }
   scorePlayerTwo.textContent = scoreTwo;
+  setWinner();
 }
 
 playerOneButton.addEventListener("click", addScorePlayerOne);
 playerTwoButton.addEventListener("click", addScorePlayerTwo);
+
+function setWinner(){
+    if (scoreOne == scoreLimit.value){
+        winner.textContent = "Player 1";
+    } else if (scoreTwo == scoreLimit.value) {
+        winner.textContent = "Player 2";
+    }
+}
