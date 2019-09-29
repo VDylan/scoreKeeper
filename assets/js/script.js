@@ -21,14 +21,14 @@ function requiredScore() {
 scoreLimit.addEventListener("change", requiredScore);
 
 function addScorePlayerOne() {
-  if (scorePlayerOne.textContent != scoreLimit) {
+  if (scorePlayerOne.textContent != scoreLimit.value) {
     scoreOne++;
   }
   scorePlayerOne.textContent = scoreOne;
 }
 
 function addScorePlayerTwo() {
-  if (scorePlayerTwo.textContent != scoreLimit) {
+  if (scorePlayerTwo.textContent != scoreLimit.value) {
     scoreTwo++;
   }
   scorePlayerTwo.textContent = scoreTwo;
