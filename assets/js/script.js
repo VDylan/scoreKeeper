@@ -20,6 +20,14 @@ function requiredScore() {
 
 scoreLimit.addEventListener("change", requiredScore);
 
+function setWinner(){
+    if (scoreOne == scoreLimit.value){
+        winner.textContent = "Player 1";
+    } else if (scoreTwo == scoreLimit.value) {
+        winner.textContent = "Player 2";
+    }
+}
+
 function addScorePlayerOne() {
   if (scoreOne != scoreLimit.value && scoreTwo != scoreLimit.value) {
     scoreOne++;
@@ -38,14 +46,6 @@ function addScorePlayerTwo() {
 
 playerOneButton.addEventListener("click", addScorePlayerOne);
 playerTwoButton.addEventListener("click", addScorePlayerTwo);
-
-function setWinner(){
-    if (scoreOne == scoreLimit.value){
-        winner.textContent = "Player 1";
-    } else if (scoreTwo == scoreLimit.value) {
-        winner.textContent = "Player 2";
-    }
-}
 
 function resetScoreKeeper() {
     scorePlayerOne.textContent = 0;
