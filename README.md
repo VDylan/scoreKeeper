@@ -22,7 +22,7 @@ If you want to edit it, you need beforehand a code editor like Visual Studio Cod
 * Reach the max score => Score in Green & Lock everything except the Reset
 * Input set the max score (5 by default)
 * Reset to default value
-* Vanilla JS only (Zero library or C/C)
+* Vanilla JS only (Zero library or Copy/Paste)
 
 #### Bonus
 
