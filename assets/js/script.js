@@ -21,4 +21,11 @@ function addScorePlayerOne() {
   scorePlayerOne.textContent = scoreOne;
 }
 
+function addScorePlayerTwo() {
+  if (scorePlayerTwo.textContent != scoreLimit) {
+    scoreTwo++;
+  }
+  scorePlayerTwo.textContent = scoreTwo;
+}
+
 playerOneButton.addEventListener("click", addScorePlayerOne);
