@@ -15,17 +15,21 @@ const winner = document.querySelector(".winnerName");
 const resetButton = document.querySelector(".resetScore");
 
 function requiredScore() {
-    scoreToWin.textContent = scoreLimit.value;
+  scoreToWin.textContent = scoreLimit.value;
 }
 
 scoreLimit.addEventListener("change", requiredScore);
 
-function setWinner(){
-    if (scoreOne == scoreLimit.value){
-        winner.textContent = "Player 1";
-    } else if (scoreTwo == scoreLimit.value) {
-        winner.textContent = "Player 2";
-    }
+function setWinner() {
+  if (scoreOne == scoreLimit.value && scoreOne > 0) {
+    winner.textContent = "Player 1";
+    scorePlayerOne.style.color = 'green';
+    scorePlayerTwo.style.color = 'red';
+  } else if (scoreTwo == scoreLimit.value && scoreTwo > 0) {
+    winner.textContent = "Player 2";
+    scorePlayerTwo.style.color = 'green';
+    scorePlayerOne.style.color = 'red';
+  }
 }
 
 function addScorePlayerOne() {
@@ -48,13 +52,15 @@ playerOneButton.addEventListener("click", addScorePlayerOne);
 playerTwoButton.addEventListener("click", addScorePlayerTwo);
 
 function resetScoreKeeper() {
-    scorePlayerOne.textContent = 0;
-    scoreOne = 0;
-    scorePlayerTwo.textContent = 0;
-    scoreTwo = 0;
-    scoreToWin.textContent = 0;
-    winner.textContent = "_____";
-    scoreLimit.value = null;
+  scorePlayerOne.textContent = 0;
+  scoreOne = 0;
+  scorePlayerTwo.textContent = 0;
+  scoreTwo = 0;
+  scoreToWin.textContent = 5;
+  winner.textContent = "_____";
+  scoreLimit.value = 5;
+  scorePlayerOne.style.color = null;
+  scorePlayerTwo.style.color = null;
 }
 
 resetButton.addEventListener("click", resetScoreKeeper);
