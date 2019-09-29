@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/darkMode.js" async></script>
     <script src="assets/js/script.js" async></script>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>My score Keeper</h1>
-        <h2>Reach <span class="scoreToWin">0</span> to win</h2>
+        <a type="button" class="darkMode">Dark Mode</a>
       </header>
 
       <main>
         <section>
-          <h3><span class="scorePlayerOne">0</span> to <span class="scorePlayerTwo">0</span></h3>
+          <h2>Reach <span class="scoreToWin">0</span> to win</h2>
+          <h3>
+            <span class="scorePlayerOne">0</span> to
+            <span class="scorePlayerTwo">0</span>
+          </h3>
           <h4>The winner is <span class="winnerName">_____</span></h4>
         </section>
         <div>
@@ -28,7 +33,13 @@
       </main>
 
       <footer>
-        <input type="number" min="0" class="scoreLimit" autocomplete="off" placeholder="Enter the required points"/>
+        <input
+          type="number"
+          min="0"
+          class="scoreLimit glowBtn"
+          autocomplete="off"
+          placeholder="Enter the required points"
+        />
       </footer>
     </div>
   </body>
