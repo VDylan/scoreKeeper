@@ -20,3 +20,5 @@ function addScorePlayerOne() {
   }
   scorePlayerOne.textContent = scoreOne;
 }
+
+playerOneButton.addEventListener("click", addScorePlayerOne);
