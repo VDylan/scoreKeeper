@@ -29,3 +29,4 @@ function addScorePlayerTwo() {
 }
 
 playerOneButton.addEventListener("click", addScorePlayerOne);
+playerTwoButton.addEventListener("click", addScorePlayerTwo);
