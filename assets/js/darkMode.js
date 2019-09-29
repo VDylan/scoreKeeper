@@ -1,4 +1,4 @@
-const darkMode = document.querySelector(".darkMode");
+const darkMode = document.querySelector("#darkMode");
 
 function changeTheme(ev) {
   if (ev.target.tagName === "A") {
@@ -6,10 +6,10 @@ function changeTheme(ev) {
   }
 
   if (document.querySelector("body").classList.contains("darkMode")) {
-    document.querySelector(".darkMode").classList.add("active");
+    document.querySelector("#darkMode").classList.add("active");
   } else {
 
-    document.querySelector(".darkMode").classList.remove("active");
+    document.querySelector("#darkMode").classList.remove("active");
   }
 }
 
