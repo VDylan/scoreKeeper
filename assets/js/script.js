@@ -46,3 +46,13 @@ function setWinner(){
         winner.textContent = "Player 2";
     }
 }
+
+function resetScoreKeeper() {
+    scorePlayerOne.textContent = 0;
+    scoreOne = 0;
+    scorePlayerTwo.textContent = 0;
+    scoreTwo = 0;
+    scoreToWin.textContent = 0;
+    winner.textContent = "_____";
+    scoreLimit.value = null;
+}
