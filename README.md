@@ -35,7 +35,7 @@ If you want to edit it, you need beforehand a code editor like Visual Studio Cod
 
 * [Visual Studio Code](https://code.visualstudio.com) - Code Editor
 
-## Auteurs
+## Contributors
 
 * **Dylan Vienne** _alias_ [@sinhast](https://github.com/sinhast?tab=repositories)
 
