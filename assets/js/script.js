@@ -16,6 +16,7 @@ const resetButton = document.querySelector(".resetScore");
 
 function requiredScore() {
   scoreToWin.textContent = scoreLimit.value;
+  setTimeout(requiredScore, 1000);
 }
 
 scoreLimit.addEventListener("change", requiredScore);
