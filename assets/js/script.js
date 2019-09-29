@@ -14,6 +14,10 @@ const winner = document.querySelector(".winnerName");
 
 const reset = document.querySelector(".resetScore");
 
+function requiredScore() {
+    scoreToWin.textContent = scoreLimit.value;
+}
+
 function addScorePlayerOne() {
   if (scorePlayerOne.textContent != scoreLimit) {
     scoreOne++;
