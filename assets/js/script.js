@@ -30,6 +30,10 @@ function setWinner() {
     scorePlayerTwo.style.color = "green";
     scorePlayerOne.style.color = "red";
   }
+
+  if (winner.textContent == "Player 1" || winner.textContent == "Player 2") {
+    winner.style.color = "green";
+  }
 }
 
 function addScorePlayerOne() {
@@ -61,6 +65,7 @@ function resetScoreKeeper() {
   scoreLimit.value = 5;
   scorePlayerOne.style.color = null;
   scorePlayerTwo.style.color = null;
+  winner.style.color = null;
 }
 
 resetButton.addEventListener("click", resetScoreKeeper);
