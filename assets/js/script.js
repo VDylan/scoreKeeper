@@ -12,7 +12,7 @@ let scoreToWin = document.querySelector(".scoreToWin");
 let scoreLimit = document.querySelector(".scoreLimit");
 const winner = document.querySelector(".winnerName");
 
-const reset = document.querySelector(".resetScore");
+const resetButton = document.querySelector(".resetScore");
 
 function requiredScore() {
     scoreToWin.textContent = scoreLimit.value;
