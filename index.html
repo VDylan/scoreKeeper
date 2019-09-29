@@ -10,37 +10,35 @@
     <script src="assets/js/script.js" async></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>My score Keeper</h1>
-        <a type="button" class="darkMode">Dark Mode</a>
-      </header>
+    <header>
+      <h1>My score Keeper</h1>
+      <a type="button" id="darkMode" class="glowBtn">Dark Mode</a>
+    </header>
 
-      <main>
-        <section>
-          <h2>Reach <span class="scoreToWin">0</span> to win</h2>
-          <h3>
-            <span class="scorePlayerOne">0</span> to
-            <span class="scorePlayerTwo">0</span>
-          </h3>
-          <h4>The winner is <span class="winnerName">_____</span></h4>
-        </section>
-        <div>
-          <button class="playerOneButton">Player 1</button>
-          <button class="resetScore">Reset</button>
-          <button class="playerTwoButton">Player 2</button>
-        </div>
-      </main>
+    <main>
+      <section>
+        <h2>Reach <span class="scoreToWin">0</span> to win</h2>
+        <h3>
+          <span class="scorePlayerOne">0</span> to
+          <span class="scorePlayerTwo">0</span>
+        </h3>
+        <h4>The winner is <span class="winnerName">_____</span></h4>
+      </section>
+      <div class="wrapper">
+        <button class="playerOneButton glowBtn">Player 1</button>
+        <button class="resetScore glowBtn">Reset</button>
+        <button class="playerTwoButton glowBtn">Player 2</button>
+      </div>
+    </main>
 
-      <footer>
-        <input
-          type="number"
-          min="0"
-          class="scoreLimit glowBtn"
-          autocomplete="off"
-          placeholder="Enter the required points"
-        />
-      </footer>
-    </div>
+    <footer>
+      <input
+        type="number"
+        min="0"
+        class="scoreLimit glowBtn"
+        autocomplete="off"
+        placeholder="Enter the required points"
+      />
+    </footer>
   </body>
 </html>
